@@ -385,22 +385,49 @@ nav.solid{
   transition:all .25s;
 }
 .proj-card:hover .proj-tech{border-color:rgba(196,164,89,.2);color:var(--ink)}
-.proj-mockup{
-  aspect-ratio:16/9;border-radius:12px;overflow:hidden;
-  background:linear-gradient(135deg,rgba(196,164,89,.08),rgba(78,205,196,.05));
-  border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  font-size:2.5rem;
-  position:relative;
-  transition:transform .4s var(--ease2),box-shadow .4s;
-}
-.proj-card:hover .proj-mockup{
-  transform:perspective(600px) rotateY(-5deg) rotateX(3deg);
-  box-shadow:20px 20px 60px rgba(0,0,0,.4);
-}
-.proj-mockup-glow{
-  position:absolute;inset:0;
-  background:radial-gradient(circle at 30% 30%,rgba(196,164,89,.12),transparent 60%);
+.proj-mockup { 
+  aspect-ratio: 16/9; 
+  border-radius: 12px; 
+  overflow: hidden; 
+  background: linear-gradient(135deg, rgba(196,164,89,.08), rgba(78,205,196,.05)); 
+  border: 1px solid var(--border); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 2.5rem; 
+  position: relative; 
+  transition: transform .4s var(--ease2), box-shadow .4s; 
+} 
+
+.proj-mockup img { 
+  position: absolute; 
+  inset: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  object-position: top center; 
+  border-radius: 12px; 
+  transition: transform .6s var(--ease2), filter .4s; 
+  filter: brightness(.9) saturate(1.1); 
+  z-index: 1; 
+} 
+
+.proj-mockup-glow { 
+  position: absolute; 
+  inset: 0; 
+  background: radial-gradient(circle at 30% 30%, rgba(196,164,89,.12), transparent 60%); 
+  z-index: 2; 
+  pointer-events: none; 
+} 
+
+.proj-card:hover .proj-mockup img { 
+  transform: scale(1.04); 
+  filter: brightness(1) saturate(1.2); 
+} 
+
+.proj-card:hover .proj-mockup { 
+  transform: perspective(600px) rotateY(-5deg) rotateX(3deg); 
+  box-shadow: 20px 20px 60px rgba(0,0,0,.4); 
 }
 
 /* ═══════════════════════════════════════════
