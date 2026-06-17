@@ -241,9 +241,9 @@ document.addEventListener('mousemove', e => {
 });
 
 /* ═══════════════════════════════════════════
-   3D TILT on EDU + ACH cards
+   3D TILT on EDU + ACH + EXP cards
 ═══════════════════════════════════════════ */
-document.querySelectorAll('.edu-card, .ach-card').forEach(card => {
+document.querySelectorAll('.edu-card, .ach-card, .exp-card').forEach(card => {
   card.addEventListener('mousemove', e => {
     const r = card.getBoundingClientRect();
     const cx = r.left + r.width / 2;

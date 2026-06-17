@@ -245,7 +245,7 @@ nav.solid{
   font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;
   color:var(--gold);display:inline-flex;align-items:center;gap:.7rem;margin-bottom:1rem;
 }
-.section-kicker::before,.section-kicker::after{content:'';width:30px;height:1px;background:var(--gold);opacity:.5}
+.section-kicker::before,.section-kicker::after{content:'';width:40px;height:1px;background:var(--gold);opacity:.5}
 .section-title{
   font-family:'Playfair Display',serif;
   font-size:clamp(2.2rem,4.5vw,3.5rem);font-weight:700;
@@ -264,6 +264,8 @@ nav.solid{
   border-radius: 20px; padding: 2.5rem;
   transition: border-color .35s, box-shadow .4s, transform .4s var(--ease2);
   position: relative; overflow: hidden;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .exp-card::after {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
@@ -334,10 +336,15 @@ nav.solid{
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:20px;padding:2.8rem;
-  display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;
+  display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:stretch;
   overflow:hidden;
   transition:border-color .4s,box-shadow .4s,transform .4s var(--ease2);
   transform-style:preserve-3d;
+} 
+.proj-card > div:first-child { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 }
 .proj-card::before{
   content:'';position:absolute;inset:0;
@@ -373,8 +380,11 @@ nav.solid{
 .proj-desc{font-size:.82rem;color:var(--ink2);line-height:1.85}
 .proj-desc li{padding-left:1.2rem;position:relative;margin-bottom:.4rem}
 .proj-desc li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:.75rem}
-.proj-visual{
-  display:flex;flex-direction:column;gap:1.2rem;
+.proj-visual { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.4rem; 
+  justify-content: center; 
 }
 .proj-stack-title{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink2);margin-bottom:.6rem}
 .proj-techs{display:flex;flex-wrap:wrap;gap:.5rem}
@@ -410,6 +420,8 @@ nav.solid{
   transition: transform .6s var(--ease2), filter .4s; 
   filter: brightness(.9) saturate(1.1); 
   z-index: 1; 
+  background: linear-gradient(135deg, rgba(196,164,89,.05), rgba(78,205,196,.05)); 
+  animation: imgFadeIn .6s ease forwards; 
 } 
 
 .proj-mockup-glow { 
@@ -428,6 +440,38 @@ nav.solid{
 .proj-card:hover .proj-mockup { 
   transform: perspective(600px) rotateY(-5deg) rotateX(3deg); 
   box-shadow: 20px 20px 60px rgba(0,0,0,.4); 
+} 
+
+/* Subtle shimmer on project image when card is hovered */ 
+.proj-mockup::after { 
+  content: ''; 
+  position: absolute; 
+  inset: 0; 
+  background: linear-gradient( 
+    120deg, 
+    transparent 30%, 
+    rgba(196,164,89,.07) 50%, 
+    transparent 70% 
+  ); 
+  z-index: 3; 
+  opacity: 0; 
+  transform: translateX(-100%); 
+  transition: opacity .1s; 
+  pointer-events: none; 
+} 
+.proj-card:hover .proj-mockup::after { 
+  opacity: 1; 
+  animation: shimmer 1.2s ease forwards; 
+} 
+@keyframes shimmer { 
+  from { transform: translateX(-100%); } 
+  to   { transform: translateX(100%); } 
+} 
+
+/* Smooth image load fade-in */ 
+@keyframes imgFadeIn { 
+  from { opacity: 0; transform: scale(1.02); } 
+  to   { opacity: 1; transform: scale(1); } 
 }
 
 /* ═══════════════════════════════════════════
@@ -600,6 +644,12 @@ footer{
   .exp-line { display: none; }
   nav{padding:1rem 1.5rem}
   .section-wrap{padding:5rem 1.5rem}
+  .proj-mockup { 
+    aspect-ratio: 16/7; 
+  } 
+  .proj-mockup img { 
+    object-position: center top; 
+  } 
 }
 @media(max-width:600px){
   .skills-grid{grid-template-columns:1fr}
