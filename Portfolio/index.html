@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinky — Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">CK.</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- PARTICLES -->
+<canvas id="particles"></canvas>
+
+<!-- ORBS -->
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <div class="nav-logo">Chin<span>ky</span>.</div>
+  <div class="nav-links">
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Awards</a>
+    <a href="#contact" class="nav-btn">Hire Me</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-eyebrow">
+    <span class="eyebrow-line"></span>
+    <span id="typed-role"></span>Full Stack Developer</span><span class="typed-cursor">|</span>
+    <span class="eyebrow-line"></span>
+  </div>
+  <h1 class="hero-title">
+    <span class="line1">Building Digital</span>
+    <span class="line2">Experiences.</span>
+  </h1>
+  <p class="hero-sub">
+    CSE student at ABES Engineering College & Google Student Developer Ambassador — building production-ready full-stack and AI-powered web apps. Currently interning at ShadowFox.
+  </p>
+  <div class="hero-ctas">
+    <a href="#projects" class="btn-glow primary">View My Work</a>
+    <a href="#contact" class="btn-glow secondary">Let's Connect</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat">
+      <div class="hstat-num" data-count="8.5" data-dec="1">0</div>
+      <div class="hstat-label">CGPA / 10</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num" data-count="600" data-suffix="+">0</div>
+      <div class="hstat-label">DSA Problems Solved</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num" data-count="15" data-suffix="+">0</div>
+      <div class="hstat-label">GitHub Repos</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num" data-count="5">0</div>
+      <div class="hstat-label">Projects Built</div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="max-w">
+      <div class="section-head reveal">
+        <p class="section-kicker">Where I've Worked</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="exp-list">
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <span class="exp-date">Jun 2026 — Present</span>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-badge-row">
+              <span class="proj-badge">Internship</span>
+              <span class="proj-badge">Remote</span>
+            </div>
+            <h3 class="exp-role">Web Development Intern</h3>
+            <p class="exp-company">ShadowFox</p>
+            <ul class="proj-desc">
+              <li>Building and deploying real-world full-stack web projects under a structured virtual internship focused on production-grade development practices.</li>
+              <li>Gained hands-on exposure to REST API design, frontend integration, and deployment workflows aligned with industry standards.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-card reveal reveal-delay-1">
+          <div class="exp-left">
+            <span class="exp-date">May 2026 — Present</span>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-badge-row">
+              <span class="proj-badge">Ambassador</span>
+              <span class="proj-badge">On-Campus</span>
+            </div>
+            <h3 class="exp-role">Google Student Developer Ambassador</h3>
+            <p class="exp-company">Google</p>
+            <ul class="proj-desc">
+              <li>Grew on-campus developer community to 200+ students by organizing workshops on Google Cloud, Firebase, and Google AI tools.</li>
+              <li>Delivered 5+ technical talks and demos; mentored peers on Google Cloud certifications and industry-ready skill development.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="max-w">
+      <div class="section-head reveal">
+        <p class="section-kicker">What I Know</p>
+        <h2 class="section-title">Skills & Expertise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block reveal">
+          <div class="skill-block-icon">⚡</div>
+          <div class="skill-block-cat">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript ES6+</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-block reveal reveal-delay-1">
+          <div class="skill-block-icon">🎨</div>
+          <div class="skill-block-cat">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-block reveal reveal-delay-2">
+          <div class="skill-block-icon">🔧</div>
+          <div class="skill-block-cat">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">Passport.js</span>
+          </div>
+        </div>
+        <div class="skill-block reveal reveal-delay-1">
+          <div class="skill-block-icon">☁️</div>
+          <div class="skill-block-cat">Database & Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MongoDB Atlas</span>
+            <span class="skill-tag">Cloudinary</span>
+            <span class="skill-tag">Render</span>
+          </div>
+        </div>
+        <div class="skill-block reveal reveal-delay-2">
+          <div class="skill-block-icon">🤖</div>
+          <div class="skill-block-cat">ML / AI</div>
+          <div class="skill-tags">
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">Classification Models</span>
+            <span class="skill-tag">Data Preprocessing</span>
+            <span class="skill-tag">Flask REST API</span>
+          </div>
+        </div>
+        <div class="skill-block reveal reveal-delay-3">
+          <div class="skill-block-icon">🛠️</div>
+          <div class="skill-block-cat">Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">npm</span>
+          </div>
+        </div>
+        <div class="skill-block reveal reveal-delay-3">
+          <div class="skill-block-icon">🧠</div>
+          <div class="skill-block-cat">Core CS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">Authentication</span>
+            <span class="skill-tag">API Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="max-w">
+      <div class="section-head reveal">
+        <p class="section-kicker">Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="proj-list">
+
+        <div class="proj-card reveal" id="p1">
+          <div>
+            <div class="proj-num-badge">01</div>
+            <div class="proj-badge-row">
+              <span class="proj-badge">Full Stack</span>
+              <span class="proj-badge">AI-Powered</span>
+            </div>
+            <h3 class="proj-title">TrustHire — AI Hiring Trust Platform</h3>
+            <ul class="proj-desc">
+              <li>Dual-sided AI trust scoring system automating credibility assessment for candidates and companies</li>
+              <li>Honesty Engine cross-references self-declared skills with real GitHub activity to dynamically adjust candidate trust scores</li>
+              <li>Company Trust Score tracks offer reliability, hiring success rate, job transparency, and platform behavior metrics</li>
+            </ul>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-mockup">🤝<div class="proj-mockup-glow"></div></div>
+            <div>
+              <div class="proj-stack-title">Tech Stack</div>
+              <div class="proj-techs">
+                <span class="proj-tech">React.js</span>
+                <span class="proj-tech">Node.js</span>
+                <span class="proj-tech">Express.js</span>
+                <span class="proj-tech">MongoDB</span>
+                <span class="proj-tech">GitHub API</span>
+                <span class="proj-tech">REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-delay-1" id="p2">
+          <div>
+            <div class="proj-num-badge">02</div>
+            <div class="proj-badge-row">
+              <span class="proj-badge">Full Stack</span>
+              <span class="proj-badge">ML/AI</span>
+            </div>
+            <h3 class="proj-title">AuraCycle — PCOD Risk Prediction & Cycle Tracker</h3>
+            <ul class="proj-desc">
+              <li>Full-stack web app predicting PCOD risk using a trained ML classification model with real-time inference via Flask REST API</li>
+              <li>Deployed on Render with gunicorn; CORS-secured backend with MongoDB Atlas</li>
+              <li>Responsive Vanilla JS frontend with live demo available</li>
+            </ul>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-mockup">🌸<div class="proj-mockup-glow"></div></div>
+            <div>
+              <div class="proj-stack-title">Tech Stack</div>
+              <div class="proj-techs">
+                <span class="proj-tech">Python</span>
+                <span class="proj-tech">Flask</span>
+                <span class="proj-tech">MongoDB Atlas</span>
+                <span class="proj-tech">scikit-learn</span>
+                <span class="proj-tech">JavaScript</span>
+                <span class="proj-tech">Render</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-delay-2" id="p3">
+          <div>
+            <div class="proj-num-badge">03</div>
+            <div class="proj-badge-row">
+              <span class="proj-badge">Full Stack</span>
+              <span class="proj-badge">Production</span>
+            </div>
+            <h3 class="proj-title">OptiStay — Rental Platform</h3>
+            <ul class="proj-desc">
+              <li>Airbnb-inspired platform with session-based auth, 10+ CRUD REST endpoints, input validation, and MVC architecture — 95%+ uptime</li>
+              <li>Reduced MongoDB query latency ~40% via compound indexing; cut media load time 30% with Cloudinary CDN</li>
+              <li>Passport.js authentication with secure registration, login & protected routes</li>
+            </ul>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-mockup">🏠<div class="proj-mockup-glow"></div></div>
+            <div>
+              <div class="proj-stack-title">Tech Stack</div>
+              <div class="proj-techs">
+                <span class="proj-tech">Node.js</span>
+                <span class="proj-tech">Express.js</span>
+                <span class="proj-tech">MongoDB</span>
+                <span class="proj-tech">Passport.js</span>
+                <span class="proj-tech">Cloudinary</span>
+                <span class="proj-tech">Render</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-delay-3" id="p4">
+          <div>
+            <div class="proj-num-badge">04</div>
+            <div class="proj-badge-row">
+              <span class="proj-badge">Vanilla JS</span>
+              <span class="proj-badge">Game</span>
+            </div>
+            <h3 class="proj-title">Simon Says — Memory Game</h3>
+            <ul class="proj-desc">
+              <li>Pattern recognition game with progressive difficulty & real-time scoring</li>
+              <li>Pure JavaScript — random patterns, input validation & timeout state management</li>
+              <li>CSS3 animations & audio feedback, responsive from 320px to 1920px+</li>
+            </ul>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-mockup">🎮<div class="proj-mockup-glow"></div></div>
+            <div>
+              <div class="proj-stack-title">Tech Stack</div>
+              <div class="proj-techs">
+                <span class="proj-tech">HTML5</span>
+                <span class="proj-tech">CSS3</span>
+                <span class="proj-tech">JavaScript</span>
+                <span class="proj-tech">Web Audio API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-delay-4" id="p5">
+          <div>
+            <div class="proj-num-badge">05</div>
+            <div class="proj-badge-row">
+              <span class="proj-badge">UI / CSS</span>
+              <span class="proj-badge">Clone</span>
+            </div>
+            <h3 class="proj-title">Spotify Clone — Music UI</h3>
+            <ul class="proj-desc">
+              <li>Pixel-perfect Spotify replica using CSS Grid & Flexbox, mobile-first approach</li>
+              <li>Semantic HTML5 + BEM naming for long-term maintainability & scalability</li>
+              <li>Advanced CSS — hover effects, smooth transitions, and custom animations</li>
+            </ul>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-mockup">🎵<div class="proj-mockup-glow"></div></div>
+            <div>
+              <div class="proj-stack-title">Tech Stack</div>
+              <div class="proj-techs">
+                <span class="proj-tech">HTML5</span>
+                <span class="proj-tech">CSS3</span>
+                <span class="proj-tech">CSS Grid</span>
+                <span class="proj-tech">Flexbox</span>
+                <span class="proj-tech">BEM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ EDUCATION ═══ -->
+<section id="education">
+  <div class="section-wrap">
+    <div class="max-w">
+      <div class="section-head reveal">
+        <p class="section-kicker">Academic Background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <p class="edu-year">2023 — 2027 · Ongoing</p>
+          <h3 class="edu-degree">Bachelor of Technology<br>Computer Science & Engineering</h3>
+          <p class="edu-school">ABES Engineering College, Ghaziabad, India</p>
+          <span class="edu-score">✦ CGPA: 8.5 / 10</span>
+        </div>
+        <div class="edu-card reveal reveal-delay-1">
+          <p class="edu-year">2023</p>
+          <h3 class="edu-degree">Senior Secondary (CBSE)<br>Physics, Chemistry, Mathematics</h3>
+          <p class="edu-school">Aryavratt Public School, Ghaziabad, India</p>
+          <span class="edu-score">✦ Score: 80%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ ACHIEVEMENTS ═══ -->
+<section id="achievements">
+  <div class="section-wrap">
+    <div class="max-w">
+      <div class="section-head reveal">
+        <p class="section-kicker">Recognition & Practice</p>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card reveal">
+          <div class="ach-icon-wrap">🥇</div>
+          <h4 class="ach-title">Elite Her Hackathon</h4>
+          <p class="ach-desc">Top 100 Nationally (Apr 2026) as Team Lead; set technical direction and managed end-to-end delivery.</p>
+        </div>
+        <div class="ach-card reveal reveal-delay-1">
+          <div class="ach-icon-wrap">🏆</div>
+          <h4 class="ach-title">Offline Hackathon</h4>
+          <p class="ach-desc">Top 10 / 250 Teams (Mar 2026) as Frontend Developer; shipped React.js + Tailwind UI under tight deadline.</p>
+        </div>
+        <div class="ach-card reveal reveal-delay-2">
+          <div class="ach-icon-wrap">⚡</div>
+          <h4 class="ach-title">DSA: 600+ Problems</h4>
+          <p class="ach-desc">LeetCode (100+: arrays, trees, graphs, DP) & CodeChef (500+, 25-day streak); HackerRank Intermediate certified.</p>
+        </div>
+        <div class="ach-card reveal reveal-delay-3">
+          <div class="ach-icon-wrap">💻</div>
+          <h4 class="ach-title">GitHub Portfolio</h4>
+          <p class="ach-desc">15+ repos with structured READMEs and consistent commit history.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="max-w">
+      <div class="contact-wrap reveal">
+        <div class="contact-orb"></div>
+        <p class="section-kicker" style="justify-content:center;display:flex">Let's Collaborate</p>
+        <h2 class="contact-title">Open to <em>Opportunities.</em></h2>
+        <p class="contact-sub">Actively seeking internships, freelance work & collaborations. Let's build something extraordinary together.</p>
+        <div class="contact-links">
+          <a href="/cdn-cgi/l/email-protection#63000b0a0d5a5b5a5a0d0823040e020a0f4d000c0e" class="clink">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" class="clink-icon"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            <span>Email Me</span>
+          </a>
+          <a href="tel:+919953046035" class="clink">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" class="clink-icon"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            <span>+91 99530 46035</span>
+          </a>
+          <a href="https://linkedin.com/in/chinky-" target="_blank" class="clink">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" class="clink-icon"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Chinky29" target="_blank" class="clink">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" class="clink-icon"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Chinky &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp; © 2025</p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ═══════════════════════════════════════════
+   LOADER
+═══════════════════════════════════════════ */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('out');
+    document.body.style.cursor = 'none';
+  }, 1600);
+});
+
+/* ═══════════════════════════════════════════
+   CURSOR
+═══════════════════════════════════════════ */
+const cur = document.getElementById('cur');
+const ring = document.getElementById('cur-ring');
+let mx = -100, my = -100, rx = -100, ry = -100;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function trackCursor() {
+  cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+  rx += (mx - rx) * .1; ry += (my - ry) * .1;
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(trackCursor);
+})();
+document.querySelectorAll('a, button, .proj-card, .ach-card, .edu-card, .skill-block').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-expand'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-expand'));
+});
+
+/* ═══════════════════════════════════════════
+   TYPED TEXT EFFECT
+═══════════════════════════════════════════ */
+const roles = [
+  'Full Stack Developer',
+  'MERN Stack Engineer',
+  'Google SDE Ambassador',
+  'ML/AI Enthusiast',
+  'Open to Opportunities'
+];
+let roleIdx = 0, charIdx = 0, deleting = false;
+const typedEl = document.getElementById('typed-role');
+function typeRole() {
+  const current = roles[roleIdx];
+  if (!deleting) {
+    typedEl.textContent = current.slice(0, ++charIdx);
+    if (charIdx === current.length) { deleting = true; setTimeout(typeRole, 1800); return; }
+  } else {
+    typedEl.textContent = current.slice(0, --charIdx);
+    if (charIdx === 0) { deleting = false; roleIdx = (roleIdx + 1) % roles.length; }
+  }
+  setTimeout(typeRole, deleting ? 45 : 90);
+}
+typeRole();
+
+/* ═══════════════════════════════════════════
+   PARTICLE CANVAS
+═══════════════════════════════════════════ */
+(function() {
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+  const N = 80;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  class Particle {
+    constructor() { this.reset(true); }
+    reset(fresh) {
+      this.x = Math.random() * W;
+      this.y = fresh ? Math.random() * H : H + 10;
+      this.r = Math.random() * 1.2 + .2;
+      this.vx = (Math.random() - .5) * .25;
+      this.vy = -(Math.random() * .4 + .1);
+      this.alpha = 0;
+      this.maxAlpha = Math.random() * .35 + .05;
+      this.life = 0;
+      this.maxLife = Math.random() * 400 + 200;
+      this.gold = Math.random() < .3;
+    }
+    update() {
+      this.x += this.vx; this.y += this.vy; this.life++;
+      const prog = this.life / this.maxLife;
+      this.alpha = prog < .1 ? prog * 10 * this.maxAlpha : prog > .85 ? (1 - (prog - .85) / .15) * this.maxAlpha : this.maxAlpha;
+      if (this.life > this.maxLife) this.reset(false);
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = this.gold
+        ? `rgba(196,164,89,${this.alpha})`
+        : `rgba(240,238,232,${this.alpha * .5})`;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < N; i++) particles.push(new Particle());
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    // Subtle connections
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 100) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          const a = (1 - d / 100) * .04;
+          ctx.strokeStyle = `rgba(196,164,89,${a})`;
+          ctx.lineWidth = .5;
+          ctx.stroke();
+        }
+      }
+    }
+    particles.forEach(p => { p.update(); p.draw(); });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ═══════════════════════════════════════════
+   NAV SCROLL
+═══════════════════════════════════════════ */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('solid', window.scrollY > 40);
+});
+
+/* ═══════════════════════════════════════════
+   ACTIVE NAV LINK HIGHLIGHTING
+═══════════════════════════════════════════ */
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 140) current = sec.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('nav-active', a.getAttribute('href') === '#' + current);
+  });
+});
+
+/* ═══════════════════════════════════════════
+   SMOOTH SCROLL
+═══════════════════════════════════════════ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 80, behavior: 'smooth' }); }
+  });
+});
+
+/* ═══════════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════════ */
+const revealEls = document.querySelectorAll('.reveal');
+const revIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); revIO.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revIO.observe(el));
+
+/* ═══════════════════════════════════════════
+   SKILLS animated tags
+═══════════════════════════════════════════ */
+document.querySelectorAll('.skill-block').forEach(block => {
+  const tags = block.querySelectorAll('.skill-tag');
+  const io = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      tags.forEach((tag, i) => {
+        tag.style.opacity = '0';
+        tag.style.transform = 'translateY(8px)';
+        setTimeout(() => {
+          tag.style.transition = 'opacity .4s ease, transform .4s ease';
+          tag.style.opacity = '1';
+          tag.style.transform = 'none';
+        }, i * 80);
+      });
+      io.disconnect();
+    }
+  }, { threshold: 0.3 });
+  io.observe(block);
+});
+
+/* ═══════════════════════════════════════════
+   COUNTER ANIMATION
+═══════════════════════════════════════════ */
+function easeOut(t) { return 1 - Math.pow(1 - t, 4); }
+function runCounter(el) {
+  const target = parseFloat(el.dataset.count);
+  const dec = parseInt(el.dataset.dec || 0);
+  const suf = el.dataset.suffix || '';
+  const dur = 1800;
+  let start = null;
+  function step(ts) {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / dur, 1);
+    const val = target * easeOut(p);
+    el.textContent = dec ? val.toFixed(dec) + suf : Math.floor(val) + suf;
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const cntIO = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { runCounter(e.target); cntIO.unobserve(e.target); } });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => cntIO.observe(el));
+
+/* ═══════════════════════════════════════════
+   PROJECT CARD — MOUSE GLOW EFFECT
+═══════════════════════════════════════════ */
+document.querySelectorAll('.proj-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width * 100).toFixed(1);
+    const y = ((e.clientY - r.top) / r.height * 100).toFixed(1);
+    card.style.setProperty('--mx', x + '%');
+    card.style.setProperty('--my', y + '%');
+  });
+});
+
+
+
+/* ═══════════════════════════════════════════
+   PARALLAX ORBS ON MOUSE
+═══════════════════════════════════════════ */
+document.addEventListener('mousemove', e => {
+  const dx = (e.clientX / window.innerWidth - .5) * 30;
+  const dy = (e.clientY / window.innerHeight - .5) * 20;
+  document.querySelector('.orb1').style.transform = `translate(${dx}px,${dy}px)`;
+  document.querySelector('.orb2').style.transform = `translate(${-dx*.6}px,${-dy*.6}px)`;
+});
+
+/* ═══════════════════════════════════════════
+   3D TILT on EDU + ACH cards
+═══════════════════════════════════════════ */
+document.querySelectorAll('.edu-card, .ach-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const cx = r.left + r.width / 2;
+    const cy = r.top + r.height / 2;
+    const rx = -(e.clientY - cy) / r.height * 12;
+    const ry = (e.clientX - cx) / r.width * 12;
+    card.style.transform = `translateY(-6px) perspective(600px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+</script>
+</body>
+</html>
