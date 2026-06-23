@@ -27,35 +27,33 @@
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
 
-<!-- ═══ NAV ═══ -->
+<!-- NAV -->
 <nav id="nav">
   <div class="nav-logo">Chin<span>ky</span>.</div>
   <div class="nav-links">
-    <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
     <a href="#achievements">Awards</a>
     <a href="#contact" class="nav-btn">Hire Me</a>
   </div>
-  <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- MOBILE MENU -->
+<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
-  <a href="#skills" class="mobile-link">Skills</a>
   <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#skills" class="mobile-link">Skills</a>
   <a href="#projects" class="mobile-link">Projects</a>
   <a href="#education" class="mobile-link">Education</a>
   <a href="#achievements" class="mobile-link">Awards</a>
-  <a href="#contact" class="mobile-link mobile-link-cta">Hire Me</a>
+  <a href="#contact" class="mobile-link mobile-cta">Hire Me</a>
 </div>
-<div class="mobile-overlay" id="mobileOverlay"></div>
 
-<!-- ═══ HERO ═══ -->
+<!-- HERO -->
 <section id="hero">
   <div class="hero-eyebrow">
     <span class="eyebrow-line"></span>
@@ -97,7 +95,9 @@
   </div>
 </section>
 
-<!-- ═══ EXPERIENCE ═══ -->
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-wrap">
     <div class="max-w">
@@ -105,42 +105,82 @@
         <p class="section-kicker">Where I've Worked</p>
         <h2 class="section-title">Experience</h2>
       </div>
+
       <div class="exp-list">
 
+        <!-- ShadowFox -->
         <div class="exp-card reveal">
           <div class="exp-left">
             <span class="exp-date">Jun 2026 — Present</span>
             <div class="exp-line"></div>
           </div>
+
           <div class="exp-right">
             <div class="exp-badge-row">
               <span class="proj-badge">Internship</span>
               <span class="proj-badge">Remote</span>
             </div>
+
             <h3 class="exp-role">Web Development Intern</h3>
-            <p class="exp-company">ShadowFox</p>
+
+            <div class="exp-company">
+              <img
+                src="./images/shadowfox.png"
+                alt="ShadowFox Logo"
+                class="company-logo"
+              />
+              <span>ShadowFox</span>
+            </div>
+
             <ul class="proj-desc">
-              <li>Building and deploying real-world full-stack web projects under a structured virtual internship focused on production-grade development practices.</li>
-              <li>Gained hands-on exposure to REST API design, frontend integration, and deployment workflows aligned with industry standards.</li>
+              <li>
+                Building and deploying real-world full-stack web projects under
+                a structured virtual internship focused on production-grade
+                development practices.
+              </li>
+              <li>
+                Gained hands-on exposure to REST API design, frontend
+                integration, and deployment workflows aligned with industry
+                standards.
+              </li>
             </ul>
           </div>
         </div>
 
+        <!-- Google -->
         <div class="exp-card reveal reveal-delay-1">
           <div class="exp-left">
             <span class="exp-date">May 2026 — Present</span>
             <div class="exp-line"></div>
           </div>
+
           <div class="exp-right">
             <div class="exp-badge-row">
               <span class="proj-badge">Ambassador</span>
               <span class="proj-badge">On-Campus</span>
             </div>
+
             <h3 class="exp-role">Google Student Developer Ambassador</h3>
-            <p class="exp-company">Google</p>
+
+            <div class="exp-company">
+              <img
+                src="./images/google.png"
+                alt="Google Logo"
+                class="company-logo"
+              />
+              <span>Google</span>
+            </div>
+
             <ul class="proj-desc">
-              <li>Grew on-campus developer community to 200+ students by organizing workshops on Google Cloud, Firebase, and Google AI tools.</li>
-              <li>Delivered 5+ technical talks and demos; mentored peers on Google Cloud certifications and industry-ready skill development.</li>
+              <li>
+                Grew on-campus developer community to 200+ students by
+                organizing workshops on Google Cloud, Firebase, and Google AI
+                tools.
+              </li>
+              <li>
+                Delivered 5+ technical talks and demos; mentored peers on Google
+                Cloud certifications and industry-ready skill development.
+              </li>
             </ul>
           </div>
         </div>
@@ -149,9 +189,10 @@
     </div>
   </div>
 </section>
+
 <div class="divider"></div>
 
-<!-- ═══ SKILLS ═══ -->
+<!-- SKILLS -->
 <section id="skills">
   <div class="section-wrap">
     <div class="max-w">
@@ -160,7 +201,6 @@
         <h2 class="section-title">Skills &amp; Expertise</h2>
       </div>
       <div class="skills-grid">
-
         <div class="skill-block reveal">
           <div class="skill-block-icon">⚡</div>
           <div class="skill-block-cat">Languages</div>
@@ -174,7 +214,6 @@
             <span class="skill-tag">CSS3</span>
           </div>
         </div>
-
         <div class="skill-block reveal reveal-delay-1">
           <div class="skill-block-icon">🎨</div>
           <div class="skill-block-cat">Frontend</div>
@@ -185,7 +224,6 @@
             <span class="skill-tag">Responsive Design</span>
           </div>
         </div>
-
         <div class="skill-block reveal reveal-delay-2">
           <div class="skill-block-icon">🔧</div>
           <div class="skill-block-cat">Backend</div>
@@ -197,7 +235,6 @@
             <span class="skill-tag">Passport.js</span>
           </div>
         </div>
-
         <div class="skill-block reveal reveal-delay-1">
           <div class="skill-block-icon">☁️</div>
           <div class="skill-block-cat">Database &amp; Cloud</div>
@@ -208,7 +245,6 @@
             <span class="skill-tag">Render</span>
           </div>
         </div>
-
         <div class="skill-block reveal reveal-delay-2">
           <div class="skill-block-icon">🤖</div>
           <div class="skill-block-cat">ML / AI</div>
@@ -219,7 +255,6 @@
             <span class="skill-tag">Flask REST API</span>
           </div>
         </div>
-
         <div class="skill-block reveal reveal-delay-3">
           <div class="skill-block-icon">🛠️</div>
           <div class="skill-block-cat">Tools</div>
@@ -228,30 +263,26 @@
             <span class="skill-tag">VS Code</span>
             <span class="skill-tag">Postman</span>
             <span class="skill-tag">npm</span>
-            <span class="skill-tag">gunicorn</span>
           </div>
         </div>
-
-        <div class="skill-block reveal reveal-delay-3 skill-block-center">
+        <div class="skill-block reveal reveal-delay-3 skill-centered">
           <div class="skill-block-icon">🧠</div>
           <div class="skill-block-cat">Core CS</div>
           <div class="skill-tags">
             <span class="skill-tag">Data Structures</span>
             <span class="skill-tag">Algorithms</span>
-            <span class="skill-tag">OOP</span>
-            <span class="skill-tag">DBMS</span>
             <span class="skill-tag">Authentication</span>
             <span class="skill-tag">API Design</span>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 </section>
+
 <div class="divider"></div>
 
-<!-- ═══ PROJECTS ═══ -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="section-wrap">
     <div class="max-w">
@@ -261,9 +292,8 @@
       </div>
       <div class="proj-list">
 
-        <!-- PROJECT 01 -->
         <div class="proj-card reveal" id="p1">
-          <div class="proj-content">
+          <div class="proj-info">
             <div class="proj-num-badge">01</div>
             <div class="proj-badge-row">
               <span class="proj-badge">Full Stack</span>
@@ -278,9 +308,12 @@
           </div>
           <div class="proj-visual">
             <div class="proj-mockup">
+                          <a href="https://github.com/Chinky29/future-job-shield" target="_blank" rel="noopener" class="proj-mockup proj-mockup-link">
               <img src="./images/trusthire.png" alt="TrustHire Platform" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="proj-mockup-fallback">🤝</div>
+              <div class="proj-mockup-fallback">🌸</div>
               <div class="proj-mockup-glow"></div>
+              <div class="proj-mockup-overlay"><span>View on GitHub ↗</span></div>
+            </a>
             </div>
             <div class="proj-stack-wrap">
               <div class="proj-stack-title">Tech Stack</div>
@@ -296,9 +329,8 @@
           </div>
         </div>
 
-        <!-- PROJECT 02 -->
         <div class="proj-card reveal reveal-delay-1" id="p2">
-          <div class="proj-content">
+          <div class="proj-info">
             <div class="proj-num-badge">02</div>
             <div class="proj-badge-row">
               <span class="proj-badge">Full Stack</span>
@@ -313,9 +345,12 @@
           </div>
           <div class="proj-visual">
             <div class="proj-mockup">
+              <a href="https://github.com/Chinky29/EliteHer" target="_blank" rel="noopener" class="proj-mockup proj-mockup-link">
               <img src="./images/aura.png" alt="AuraCycle App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="proj-mockup-fallback">🌸</div>
               <div class="proj-mockup-glow"></div>
+              <div class="proj-mockup-overlay"><span>View on GitHub ↗</span></div>
+</a>
             </div>
             <div class="proj-stack-wrap">
               <div class="proj-stack-title">Tech Stack</div>
@@ -331,9 +366,8 @@
           </div>
         </div>
 
-        <!-- PROJECT 03 -->
         <div class="proj-card reveal reveal-delay-2" id="p3">
-          <div class="proj-content">
+          <div class="proj-info">
             <div class="proj-num-badge">03</div>
             <div class="proj-badge-row">
               <span class="proj-badge">Full Stack</span>
@@ -366,9 +400,8 @@
           </div>
         </div>
 
-        <!-- PROJECT 04 -->
         <div class="proj-card reveal reveal-delay-3" id="p4">
-          <div class="proj-content">
+          <div class="proj-info">
             <div class="proj-num-badge">04</div>
             <div class="proj-badge-row">
               <span class="proj-badge">Vanilla JS</span>
@@ -383,9 +416,13 @@
           </div>
           <div class="proj-visual">
             <div class="proj-mockup">
+              
+              <a href="https://github.com/Chinky29/Simon-Says-Game" target="_blank" rel="noopener" class="proj-mockup proj-mockup-link">
               <img src="./images/SIMON.png" alt="Simon Says Game" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="proj-mockup-fallback">🎮</div>
+              <div class="proj-mockup-fallback">🌸</div>
               <div class="proj-mockup-glow"></div>
+              <div class="proj-mockup-overlay"><span>View on GitHub ↗</span></div>
+            </a>
             </div>
             <div class="proj-stack-wrap">
               <div class="proj-stack-title">Tech Stack</div>
@@ -399,9 +436,8 @@
           </div>
         </div>
 
-        <!-- PROJECT 05 -->
         <div class="proj-card reveal reveal-delay-4" id="p5">
-          <div class="proj-content">
+          <div class="proj-info">
             <div class="proj-num-badge">05</div>
             <div class="proj-badge-row">
               <span class="proj-badge">UI / CSS</span>
@@ -416,9 +452,13 @@
           </div>
           <div class="proj-visual">
             <div class="proj-mockup">
+
+              <a href="https://github.com/Chinky29/Spotify-Clone" target="_blank" rel="noopener" class="proj-mockup proj-mockup-link">
               <img src="./images/spotify.png" alt="Spotify Clone" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="proj-mockup-fallback">🎵</div>
+              <div class="proj-mockup-fallback">🌸</div>
               <div class="proj-mockup-glow"></div>
+              <div class="proj-mockup-overlay"><span>View on GitHub ↗</span></div>
+            </a>
             </div>
             <div class="proj-stack-wrap">
               <div class="proj-stack-title">Tech Stack</div>
@@ -437,9 +477,10 @@
     </div>
   </div>
 </section>
+
 <div class="divider"></div>
 
-<!-- ═══ EDUCATION ═══ -->
+<!-- EDUCATION -->
 <section id="education">
   <div class="section-wrap">
     <div class="max-w">
@@ -464,9 +505,10 @@
     </div>
   </div>
 </section>
+
 <div class="divider"></div>
 
-<!-- ═══ ACHIEVEMENTS ═══ -->
+<!-- ACHIEVEMENTS -->
 <section id="achievements">
   <div class="section-wrap">
     <div class="max-w">
@@ -475,39 +517,34 @@
         <h2 class="section-title">Achievements</h2>
       </div>
       <div class="ach-grid">
-        <div class="ach-card ach-card-featured reveal">
-          <span class="ach-tag">Finalist</span>
-          <div class="ach-icon-wrap">🎯</div>
-          <h4 class="ach-title">QuantCraft 2026 — National Hackathon Finalist</h4>
-          <p class="ach-desc">Reached the finals among nationwide teams at this 24-hour national-level hackathon hosted at Galgotias University — built and pitched a project as a 2-member team across AI, Web3 &amp; cybersecurity tracks alongside industry mentors.</p>
-        </div>
-        <div class="ach-card reveal reveal-delay-1">
+        <div class="ach-card reveal">
           <div class="ach-icon-wrap">🥇</div>
           <h4 class="ach-title">Elite Her Hackathon</h4>
           <p class="ach-desc">Top 100 Nationally (Apr 2026) as Team Lead — set technical direction and managed end-to-end delivery under competition constraints.</p>
         </div>
-        <div class="ach-card reveal reveal-delay-2">
+        <div class="ach-card reveal reveal-delay-1">
           <div class="ach-icon-wrap">🏆</div>
           <h4 class="ach-title">Offline Hackathon</h4>
           <p class="ach-desc">Top 10 / 250 Teams (Mar 2026) as Frontend Developer — shipped polished React.js + Tailwind CSS UI under tight deadline.</p>
         </div>
-        <div class="ach-card reveal reveal-delay-3">
+        <div class="ach-card reveal reveal-delay-2">
           <div class="ach-icon-wrap">⚡</div>
           <h4 class="ach-title">DSA: 600+ Problems</h4>
           <p class="ach-desc">LeetCode (100+: arrays, trees, graphs, DP) &amp; CodeChef (500+, 25-day streak); HackerRank Problem Solving Intermediate certified.</p>
         </div>
-        <div class="ach-card reveal reveal-delay-4">
+        <div class="ach-card reveal reveal-delay-3">
           <div class="ach-icon-wrap">💻</div>
           <h4 class="ach-title">GitHub Portfolio</h4>
-          <p class="ach-desc">20+ repositories with structured READMEs and consistent commit history demonstrating version control discipline.</p>
+          <p class="ach-desc">15+ repos with structured READMEs and consistent commit history demonstrating version control discipline.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <div class="divider"></div>
 
-<!-- ═══ CONTACT ═══ -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="section-wrap">
     <div class="max-w">
