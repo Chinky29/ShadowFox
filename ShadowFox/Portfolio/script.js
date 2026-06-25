@@ -10,6 +10,9 @@ window.addEventListener('load', () => {
 
 /* ═══════════════════════════════════════════
    CUSTOM CURSOR
+   FIX: was toggling 'cursor-expand' on body,
+   but CSS targets #cur-ring.cur-hover.
+   Now we toggle the class directly on the ring.
 ═══════════════════════════════════════════ */
 const cur = document.getElementById('cur');
 const ring = document.getElementById('cur-ring');
@@ -22,8 +25,8 @@ document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; })
   requestAnimationFrame(trackCursor);
 })();
 document.querySelectorAll('a, button, .proj-card, .ach-card, .edu-card, .skill-block, .exp-card').forEach(el => {
-  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-expand'));
-  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-expand'));
+  el.addEventListener('mouseenter', () => ring.classList.add('cur-hover'));
+  el.addEventListener('mouseleave', () => ring.classList.remove('cur-hover'));
 });
 
 /* ═══════════════════════════════════════════
@@ -154,13 +157,15 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 
 /* ═══════════════════════════════════════════
    NAV SCROLL + ACTIVE LINK HIGHLIGHT
+   FIX: JS was toggling class 'solid' but CSS
+   targets '#nav.scrolled'. Unified to 'scrolled'.
 ═══════════════════════════════════════════ */
 const nav = document.getElementById('nav');
 const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 const sections = document.querySelectorAll('section[id]');
 
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('solid', window.scrollY > 40);
+  nav.classList.toggle('scrolled', window.scrollY > 40);
   let current = '';
   sections.forEach(sec => {
     if (window.scrollY >= sec.offsetTop - 160) current = sec.getAttribute('id');
